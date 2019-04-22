@@ -17,14 +17,15 @@ import java.util.Map;
 @Service
 public class CreateFile {
 
-    public File createWordFile(){
+    public File createWordFile(Map map){
         //临时文件
         File f = null;
         //需要组装的数据
-        Map<String,Object> dataMap = new HashMap<>();
+        Map<String,Object> dataMap = map;
         //装载数据
-        dataMap.put("title","测试生成文档"+(int)(Math.random()*200000));
-
+        //dataMap.put("title","测试生成文档"+(int)(Math.random()*200000));//标题；
+        //图片，base64编码
+        //dataMap.put("imgUrl","");
         Configuration configuration = new Configuration();
 
         //设置编码
@@ -39,7 +40,6 @@ public class CreateFile {
             f = File.createTempFile("tmpw",".doc");
             //装载模板
             Template template = configuration.getTemplate("model.ftl");
-
             //写入临时文件
             Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f),"UTF-8"));
             //生成文件

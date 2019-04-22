@@ -678,59 +678,11 @@
         </w:pPr>
         <w:r>
           <w:rPr>
-            <w:rFonts w:hint="fareast"/>
-            <w:sz w:val="28"/>
-          </w:rPr>
-          <w:t>   </w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz w:val="28"/>
-          </w:rPr>
-          <w:t> </w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
             <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
             <w:sz w:val="24"/>
             <w:sz-cs w:val="24"/>
           </w:rPr>
-          <w:t>根据电力需求侧管理服务平台</w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz w:val="24"/>
-            <w:sz-cs w:val="24"/>
-            <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-          </w:rPr>
-          <w:t></w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz w:val="24"/>
-            <w:sz-cs w:val="24"/>
-          </w:rPr>
-          <w:t>对</w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz w:val="24"/>
-            <w:sz-cs w:val="24"/>
-            <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-          </w:rPr>
-          <w:t></w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz w:val="24"/>
-            <w:sz-cs w:val="24"/>
-          </w:rPr>
-          <w:t>可以看出：</w:t>
+          <w:t>${t1}</w:t>
         </w:r>
       </w:p>
       <w:p>
@@ -743,37 +695,21 @@
             <w:sz w:val="22"/>
           </w:rPr>
         </w:pPr>
+        <#list suggest as sug>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
+                <w:sz-cs w:val="21"/>
+              </w:rPr>
+              <w:t>${sug}</w:t>
+              </w:r>
+        </#list>
         <w:r>
           <w:rPr>
             <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
             <w:sz-cs w:val="21"/>
           </w:rPr>
-          <w:t>（1）</w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz-cs w:val="21"/>
-            <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-          </w:rPr>
-          <w:t></w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:b/>
-            <w:color w:val="FF0000"/>
-            <w:sz-cs w:val="21"/>
-            <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-          </w:rPr>
-          <w:t></w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:sz-cs w:val="21"/>
-          </w:rPr>
-          <w:t>详细夜间用电情况图如下所示：</w:t>
+          <w:t>${t2}：</w:t>
         </w:r>
       </w:p>
       <w:p>
@@ -818,16 +754,7 @@
 						<w:b/>            
 						<w:sz w:val="22"/>          
 						</w:rPr>          
-						<w:t>二：</w:t>
-        </w:r>
-        <w:r>
-          <w:rPr>
-            <w:rFonts w:ascii="仿宋" w:h-ansi="仿宋" w:fareast="仿宋" w:hint="fareast"/>
-            <w:b/>
-            <w:sz w:val="22"/>
-            <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-          </w:rPr>
-          <w:t></w:t>
+						<w:t>${t3}</w:t>
         </w:r>
       </w:p>
       <w:tbl>
@@ -890,7 +817,7 @@
                   <w:sz w:val="18"/>
                   <w:sz-cs w:val="18"/>
                 </w:rPr>
-                <w:t>2019-3-25～2019-3-31</w:t>
+                <w:t>${tTime}</w:t>
               </w:r>
             </w:p>
           </w:tc>
@@ -907,7 +834,8 @@
           <w:trPr>
             <w:trHeight w:val="285" w:h-rule="atLeast"/>
           </w:trPr>
-          <w:tc>
+            <#list columns as clum>
+                <w:tc>
             <w:tcPr>
               <w:tcW w:w="817" w:type="dxa"/>
               <w:tcBorders>
@@ -934,167 +862,14 @@
                   <w:sz w:val="18"/>
                   <w:sz-cs w:val="18"/>
                 </w:rPr>
-                <w:t>序号</w:t>
+                <w:t>${clum.title}</w:t>
               </w:r>
             </w:p>
           </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="2107" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>用电采集对象</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1404" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>夜间电量(kWh)</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1762" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>夜间异常电量(kWh)</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1583" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>夜间电量天数(天)</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="849" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>占比(%)</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
+            </#list>
         </w:tr>
-        <w:tr>
+          <#list tdata as tdt>
+              <w:tr>
           <w:tblPrEx>
             <w:tblCellMar>
               <w:top w:w="0" w:type="dxa"/>
@@ -1106,7 +881,8 @@
           <w:trPr>
             <w:trHeight w:val="285" w:h-rule="atLeast"/>
           </w:trPr>
-          <w:tc>
+                  <#list tdt as ti>
+                      <w:tc>
             <w:tcPr>
               <w:tcW w:w="817" w:type="dxa"/>
               <w:tcBorders>
@@ -1135,351 +911,13 @@
                   <w:sz-cs w:val="18"/>
                   <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
                 </w:rPr>
-                <w:t></w:t>
+                <w:t>${ti}</w:t>
               </w:r>
             </w:p>
           </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="2107" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1404" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1762" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1583" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="849" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
+                  </#list>
         </w:tr>
-        <w:tr>
-          <w:tblPrEx>
-            <w:tblCellMar>
-              <w:top w:w="0" w:type="dxa"/>
-              <w:left w:w="108" w:type="dxa"/>
-              <w:bottom w:w="0" w:type="dxa"/>
-              <w:right w:w="108" w:type="dxa"/>
-            </w:tblCellMar>
-          </w:tblPrEx>
-          <w:trPr>
-            <w:trHeight w:val="285" w:h-rule="atLeast"/>
-          </w:trPr>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="2924" w:type="dxa"/>
-              <w:gridSpan w:val="2"/>
-              <w:tcBorders>
-                <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="center"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>合计</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1404" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="right"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1762" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="right"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="1583" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="right"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                </w:rPr>
-                <w:t>--</w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-          <w:tc>
-            <w:tcPr>
-              <w:tcW w:w="849" w:type="dxa"/>
-              <w:tcBorders>
-                <w:top w:val="nil"/>
-                <w:left w:val="nil"/>
-                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
-              </w:tcBorders>
-              <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-              <w:vAlign w:val="bottom"/>
-            </w:tcPr>
-            <w:p>
-              <w:pPr>
-                <w:jc w:val="right"/>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:fareast="宋体" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-              </w:pPr>
-              <w:r>
-                <w:rPr>
-                  <w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" w:hint="fareast"/>
-                  <w:sz w:val="18"/>
-                  <w:sz-cs w:val="18"/>
-                  <w:lang w:val="EN-US" w:fareast="ZH-CN"/>
-                </w:rPr>
-                <w:t></w:t>
-              </w:r>
-            </w:p>
-          </w:tc>
-        </w:tr>
+          </#list>
       </w:tbl>
       <w:p>
         <w:pPr>
@@ -1495,7 +933,7 @@
             <w:rFonts w:hint="fareast"/>
             <w:sz w:val="20"/>
           </w:rPr>
-          <w:t>备注：异常用电电量指除电器设备正常待机产生的电量之外的用电量。</w:t>
+          <w:t>${plus}</w:t>
         </w:r>
         <w:r>
           <w:rPr>

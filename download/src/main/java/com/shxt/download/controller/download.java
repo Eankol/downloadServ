@@ -3,12 +3,12 @@ package com.shxt.download.controller;
 import com.shxt.download.service.CreateFile;
 import com.shxt.download.service.filesProvider;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.Map;
 
 @RestController
 public class download {
@@ -48,13 +48,16 @@ public class download {
 
         }
     }
-    @GetMapping("/getUrl")
-    public String getUrl(String fileName){
+    //@GetMapping("/getUrl")
+    @RequestMapping(value = "/getUrl",method = RequestMethod.POST)
+    public String getUrl(@RequestBody Map resMap){
+
+        System.out.println(resMap.get("title"));
         File f = null;
         String code="";
         try {
             //新建临时文件；
-            f =  cf.createWordFile();
+            f =  cf.createWordFile(resMap);
             //生成下载码；
             code = ((int)(Math.random()*100000))+"";
             while(filesProvider.f.hasFlie(code)==1){
